@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>RTC10 Brokers | Seguros Médicos Internacionales</title>
+  <meta name="description" content="Seguros médicos internacionales para clientes de alto poder adquisitivo. Cobertura global, atención personalizada.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- LOGO -->
+  <header>
+    <img src="assets/LOGO-RTC10.png" alt="RTC10 Brokers Logo" class="logo">
+    <a href="https://wa.me/526441471296" target="_blank" class="whatsapp-btn header-btn">
+      Contactar a un experto
+    </a>
+  </header>
+
+  <main>
+    <h1 class="fade-in">Bienvenido a RTC10 Brokers</h1>
+    <section class="fade-in">
+      <h2>Seguros que cruzan fronteras</h2>
+      <p>Soluciones reales para personas reales.</p>
+      <p>Cobertura global, atención personalizada.</p>
+      <p>RTC10 Brokers se dedica a ofrecer seguros médicos mayores, internacionales y privados, incluyendo planes para personas que normalmente no son asegurables.</p>
+
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="nosotros fade-in">
+      <h2>Nosotros</h2>
+      <div class="nosotros-bloques">
+        <div class="bloque-nosotros">+10 años de experiencia en el sector de seguros médicos internacionales.</div>
+        <div class="bloque-nosotros">Aseguramos incluso si tienes historial médico o condiciones preexistentes.</div>
+        <div class="bloque-nosotros">Atención personalizada y planes exclusivos para clientes exigentes.</div>
+        <div class="bloque-nosotros">Soluciones reales para personas reales, sin importar tu situación.</div>
+        <div class="bloque-nosotros">Acceso a red global de aseguradoras líderes.</div>
+        <div class="bloque-nosotros">Asesoría confidencial y soporte 24/7 en todo momento.</div>
+      </div>
+    </section>
+
+
+
+    </section>
+  </main>
+  <a href="https://wa.me/526441471296" target="_blank" class="whatsapp-btn header-btn">
+    <img src="assets/whatsapp.png" alt="WhatsApp"> Contactar a un experto
+  </a>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- PARTNERS -->
+  <footer>
+
+    <div class="partners-bar">
+      <div class="partners">
+      <a href="https://americanfidelity.com" target="_blank"><img src="assets/American Fidelity.jpg" alt="American Fidelity"></a>
+      <a href="https://bestdoctorsinsurance.com" target="_blank"><img src="assets/Best Doctors Insurance.jpg" alt="Best Doctors Insurance"></a>
+      <a href="https://imglobal.com" target="_blank"><img src="assets/IMG.jpg" alt="IMG"></a>
+      <a href="https://oleinsurance.com" target="_blank"><img src="assets/Olé Insurance.jpg" alt="Olé Insurance"></a>
+      <a href="https://panamericanlife.com" target="_blank"><img src="assets/Panamerican.jpg" alt="Panamerican"></a>
+      <a href="https://redbridge.cc" target="_blank"><img src="assets/Redbridge.jpg" alt="Redbridge"></a>
+      <a href="https://vumigroup.com" target="_blank"><img src="assets/VUMI.png" alt="VUMI"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Carrusel profesional
+    let currentSlide = 0;
+    const images = document.querySelectorAll('.carrusel-img');
+    const track = document.querySelector('.carrusel-track');
+    function updateCarousel() {
+      if (!track) return;
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+    function moveCarousel(dir) {
+      if (!images.length) return;
+      currentSlide += dir;
+      if (currentSlide < 0) currentSlide = images.length - 1;
+      if (currentSlide >= images.length) currentSlide = 0;
+      updateCarousel();
+    }
+    window.addEventListener('DOMContentLoaded', updateCarousel);
+  </script>
+</body>
+</html>
